@@ -9,6 +9,6 @@ Para ter como referência, foi feito um rascunho, no figma, de como a landing pa
 
 Neste repositório será feita a transcrição deste exemplo para código, em HTML e CSS, de modo a ser possível usar em um site.
 
-Ao final deste trabalho beneficiente feito pela UNIFEBE, será escolhida a melhor landing page feita pelos grupos da 2º fase, e o melhor projeto será de fato usada como landing page principal no site da ADVB!
+Ao final deste trabalho beneficiente feito pela UNIFEBE, será escolhida a melhor landing page feita pelos grupos da 2º fase do curso de Sistemas de Informação, e o melhor projeto será de fato usada como landing page principal no site da ADVB!
 
 Integrantes deste projeto: Caio Onofre Riegert, Bruno Masera Piffer, Osnildo Kistner Junior, Natan Tormena.
