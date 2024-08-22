@@ -1,0 +1,188 @@
+/* Configurações gerais da página */
+*{
+    width: 100%;
+    margin: 0;
+    box-sizing:border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+}
+
+
+/* Fiz o cabeçalho ser "infinito"em questão de zoom mas mantendo a altura dele */
+header{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    background-color: #6C795E;
+    width: 100%;
+    height: 100px;
+}
+
+/* Como o cabeçalho é infinito, não ia ficar lega ter cada informação em cada canto de uma tela ultra-wide. Aqui limita o espaçamento deles de no máximo 1920px */
+.alinhamento-cabecalho{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 50px;
+    width: 1920px;
+    height: 100%;
+    padding: 0px 20px
+}
+
+/*Configurações dos elementos do cabeçalho*/
+.logo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.logo b{
+    font-size: 50px;
+    color: white
+}
+
+.whatsapp{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.moldura-whatsapp{
+    background-color: white;
+    width: fit-content;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 7px solid #657159;
+}
+
+.moldura-whatsapp p{
+    font-size: 25px;
+    color: #6C795E;
+}
+
+/*Isso limita a largura da página em apenas 1500px para não ficar esquisito em uma tela ultra-wide. Coisa de responsividade*/
+.alinhamento-pagina{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 1500px;
+    height: fit-content;
+    padding: 20px 20px
+}
+
+
+
+
+
+
+
+
+
+
+
+/* O CSS DE VOCES VEM AQUI NO MEIO*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Mesma coisa do header. Responsividade*/
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    background-color: #6C795E;
+    width: 100%;
+    height: fit-content;
+    padding: 50px 0px 0px 0px;
+    color: white;
+}
+
+/*Mesma coisa do alinhamento do cabeçalho*/
+.alinhamento-rodape{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 30px;
+    align-items: center;
+    margin: auto;
+    width: 1000px;
+    height: fit-content;
+    padding: 20px 20px
+}
+
+/*Configs dos elementos do rodape*/
+.endereco, .contato{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.alinhamento-rodape, .endereco .contato{
+    padding: 0px 10%;
+}
+
+.logo-rodape{
+    margin: 0 0 20px 0
+}
+
+.logo-rodape b{
+    font-size: 40px;
+}
+
+.titulo-contato{
+    margin: 0 0 20px 0
+}
+
+.titulo-contato b{
+    font-size: 20px;
+}
+
+.titulo-contato p, .logo-rodape p{
+    padding: 10px 0 10px 0;
+}
+
+.linha{
+    margin-top: 60px;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+}
+
+.autores{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.autores p{
+    font-size: 15px;
+}
