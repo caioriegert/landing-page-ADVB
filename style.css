@@ -89,29 +89,27 @@ header{
 }
 
 
+.secao1 {
+display: flex;
+margin:auto
+}
 
+.texto p{
+font-size: 18px;
+}
 
+.texto h2 {
+    font-size: 40px;
+}
 
-
-
-
-
+.midia-secao img{
+    width: 600px;
+    border: 4px solid lightgrey;
+    margin-left: 20%;
+}
 
 
 /* O CSS DE VOCES VEM AQUI NO MEIO*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
