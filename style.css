@@ -100,7 +100,8 @@ header{
     height: 100%;
 }
 
-.secao1 {
+/* Aqui é organizada todas as seções da página que possuem texto na esquerda e imagem na direita. Duas colunas basicamente */
+.secao1, .secao2, .secao3, .secao4{
     display: flex;
     flex-direction: row;
     margin:auto;
@@ -109,6 +110,8 @@ header{
     height: fit-content;
     padding: 20px;
 }
+
+
 
 .texto{
     width: 50%;
@@ -122,7 +125,7 @@ header{
 }
 
 .texto h2 {
-    font-size: 40px;
+    font-size: 60px;
 }
 
 .midia-secao{
@@ -138,10 +141,100 @@ header{
     border: 4px solid lightgrey;
 }
 
+/* Aqui organiza as seções que possuem icons para que o texto ocupe mais porcentagem do width da página e sobre apenas um pequeno espaço para o icon no lado esquerdo */
+.icon{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
-/* O CSS DE VOCES VEM AQUI NO MEIO*/
+/* Mesma coisa que o comando de cima porem para a imagem se enquadrar no 100% */
+.midia-secao-icon{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.midia-secao-icon img{
+    width: 200px;
+    height: auto;
+    border: 0px;
+}
 
 
+.divisoria{
+    width: 100%;
+    border-bottom: 4px solid gray;
+    margin: 60px 0px;
+}
+
+/* Código do mosaico de imagens */
+.mosaico-imagens{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.horizontal-img{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.horizontal-img img{
+    object-fit: cover;
+    width: calc(50% - 10px);
+    height: 350px;
+}
+
+/* Depoimentos */
+.depoimentos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.depoimentos h3{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+.conj-depoimentos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+
+.card-depoimento{
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 10px);
+    background-color: #9BAB8A;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.foto-nome-idade img{
+    width: 80px;
+}
+
+.nome-idade p{
+    font-weight: bolder;
+}
+
+
+
+
+/* Rodapé
 
 /*Mesma coisa do header. Responsividade*/
 footer{
