@@ -101,7 +101,7 @@ header{
 }
 
 /* Aqui é organizada todas as seções da página que possuem texto na esquerda e imagem na direita. Duas colunas basicamente */
-.secao1, .secao2, .secao3, .secao4{
+.secao1, .secao2, .secao3, .secao4, .secao5{
     display: flex;
     flex-direction: row;
     margin:auto;
@@ -110,8 +110,6 @@ header{
     height: fit-content;
     padding: 20px;
 }
-
-
 
 .texto{
     width: 50%;
@@ -142,7 +140,7 @@ header{
 }
 
 /* Aqui organiza as seções que possuem icons para que o texto ocupe mais porcentagem do width da página e sobre apenas um pequeno espaço para o icon no lado esquerdo */
-.icon{
+.texto-icon{
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -163,6 +161,9 @@ header{
     border: 0px;
 }
 
+.sem-borda img{
+    border: 0px;
+}
 
 .divisoria{
     width: 100%;
@@ -232,8 +233,6 @@ header{
 }
 
 
-
-
 /* Rodapé
 
 /*Mesma coisa do header. Responsividade*/
@@ -241,7 +240,7 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: auto;
+    margin-top: 20px;
     background-color: #6C795E;
     width: 100%;
     height: fit-content;
@@ -304,7 +303,100 @@ footer{
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    padding: 0px 20px;
 }
 .autores p{
     font-size: 15px;
+}
+
+@media (max-width: 720px) {
+    .alinhamento-pagina{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 80%;
+        max-width: 1500px;
+        height: fit-content;
+        padding: 20px 10px
+    }
+
+    .secao1, .secao2, .secao3, .secao4, .secao5{
+        display: flex;
+        flex-direction: column-reverse;
+        margin:auto;
+        row-gap: 20px;
+        width: 100%;
+        height: fit-content;
+        padding: 10px 0px
+    }
+
+    .texto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .midia-secao{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .icon{
+        margin: 20px 0px;
+        background-color: #c5d4b4;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    
+    .horizontal-img img{
+        object-fit: cover;
+        width: 100%;
+        height: 350px;
+    }
+
+    .depoimentos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+
+    .conj-depoimentos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        row-gap: 20px;
+    }
+
+    .card-depoimento{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #9BAB8A;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .alinhamento-rodape{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: fit-content;
+    }
+
+    .alinhamento-rodape, .endereco .contato{
+        padding: 50px;
+    }
 }
